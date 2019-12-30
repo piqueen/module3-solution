@@ -1,32 +1,75 @@
+* {
+	box-sizing: border-box;
+}
+
 body{
 	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-	position: relative;
+	font-size: 15px;
+	/*position: relative;*/
 
 }
-#header-nav{
+
+.navbar {
+	margin-bottom: 0px;
+	height: 30%;
 	background-color: #D9B8C4;
 	border-radius: 0;
 	border: 1px solid #6B4E71;
-	width:100%;
 }
-.navbar-header {
-	padding: 10px;
 
-}
-.navbar-brand h1{
-	margin-top: -10px;
+.navbar-brand {
 	text-align: left;
-	color: #6B4E71;
+	font-size: 25px;
 }
+
+.navbar-default .navbar-brand{
+	color: black;
+}
+#page-heading{
+	font-size: 2em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #6B4E71;
 }
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -40px;
-  margin-bottom: 0px;
+
+.container .row  p{
+	background-color: #D9B8C4;
+	padding: 15px;
+	height: 700%;
 }
+
+
+.container .row h2{
+	margin-bottom: 0px;
+}
+
+
+#Chicken{
+	background-color: #D9B8C4;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#Beef{
+	background-color: #D9B8C4;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#Sushi{
+	background-color: #D9B8C4;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#collapsable-nav{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
 #nav-list {
 	width: 100%;
 }
@@ -40,68 +83,17 @@ body{
 #nav-list li{
 	font-size: 1.2em;
 }
-#page-heading{
-	font-size: 20px;
-	margin-bottom: 10px;
-}
-.jumbotron{
-	margin-top: 45px;
-	height: 1000px;
-	background-color: #dbcedb;
-}
-.jumbotron h2{
-	font-size: 20px;
-	text-align: center;
-	font-weight: bold;
-	margin-top: 10px;
-}
-.jumbotron p{
-	overflow: hidden;
-}
-.container .jumbotron{
-	padding-right: 15px;
-	padding-left: 15px;
-	padding-top: 30px;
-}	
-.container {
-	margin-right: 20px;
-	margin-left: 20px;
-}
+
 /*Desktop Medium*/
 @media (min-width: 992px){
-	.container {
-		margin-left: 45px;
-	}
-	#page-heading {
-		font-size: 1.5em;
-	}
 }
 
-/*Tablet Small*/
+/*Tablet Small*/ /*The 3 bar menu stops appearing*/
 @media (min-width: 768px) and (max-width: 991px){
-	.container {
-		margin-left: 10px;
-	}
-	#page-heading {
-		margin-bottom: -30px;
-		font-size: 30px;
-	}
+
 }
 
 /*Phone XS*/
-@media (max-width:540px){
+@media (max-width:768px){
 
-	.jumbotron {
-		height: 1500px;
-	}
-	.jumbotron p {
-		font-size: .6em;
-	}
-	.jumbotron h2 {
-		margin-top: -10px;
-	}
-	#page-heading{
-		font-size: 1em;
-		margin-bottom: -30px;
-	}	
 }
